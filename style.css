@@ -1,0 +1,85 @@
+:root{
+    --box-size: 200px;
+}
+
+.square{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    justify-content: center;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.square div{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 30vw;
+    max-width: var(--box-size);
+    max-height: var(--box-size);
+}
+
+.point, .turn{
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+}
+
+body{
+    margin: 0;
+}
+
+.point{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.icon img{
+    width: 100%;
+}
+
+.turn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+.container div{
+    border-radius: 10px;
+    width: 400px;
+    height: 280px;
+    background-color: rgb(48, 48, 48);
+    border: 3px solid white;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.close{
+    border: none;
+    width: 2em;
+}
+
+.container h1{
+    margin: auto;
+}
